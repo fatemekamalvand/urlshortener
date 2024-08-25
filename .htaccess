@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# هدایت همه درخواست‌ها به frontend/web بدون تغییر در URL
+#RewriteCond %{REQUEST_URI} !^/backend/web/
+RewriteCond %{REQUEST_URI} !^/frontend/web/
+#RewriteCond %{REQUEST_FILENAME} !-f  # اگر فایل فیزیکی وجود ندارد
+#RewriteCond %{REQUEST_FILENAME} !-d  # اگر دایرکتوری فیزیکی وجود ندارد
+RewriteRule ^(.*)$ frontend/web/$1 [L]

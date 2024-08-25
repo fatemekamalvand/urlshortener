@@ -1,0 +1,50 @@
+/* تنظیم جهت متن و راست‌چین کردن */
+body, html {
+    direction: rtl;
+    text-align: right;
+}
+
+/* تنظیمات پایه برای راست‌چین کردن */
+.container, .row, .col {
+    direction: rtl;
+    text-align: right;
+}
+
+/* تطبیق‌دهی فضاهای داخلی (padding) و حاشیه‌ها (margin) */
+* {
+    margin-right: auto;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: auto;
+}
+
+/* راست‌چین کردن عناصر خاص */
+.navbar, .header, .footer, .content {
+    text-align: right;
+}
+
+/* رفع مشکلات احتمالی در راست‌چین کردن فرم‌ها */
+.form-group, .form-control {
+    text-align: right;
+}
+
+/* تنظیمات برای راست‌چین کردن لینک‌ها و دکمه‌ها */
+a, button {
+    text-align: right;
+}
+
+/* تنظیمات خاص برای عناصر مانند جداول */
+table {
+    direction: rtl;
+    text-align: right;
+}
+
+/* اصلاح جهت عناصر لیست */
+ul, ol {
+    padding-right: 20px;
+}
+
+/* راست‌چین کردن متن در عناصر تودرتو */
+p, h1, h2, h3, h4, h5, h6, span, div {
+    text-align: right;
+}
